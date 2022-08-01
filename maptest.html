@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link type="stylesheet" src="mapatest"></link>
+      <title>Doctors in English</title> 
+      <style>
+          * {
+            margin: 0;
+            padding:  0;
+          }
+          #map{
+             height: 500px;
+             width: 100%;
+             position: relative;
+             
+          }
+        </style>
+
+<style>
+ body {
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(66, 175, 218) 94%);
+}
+  span.a {
+    display: inline; /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;  
+    background-color: yellow; 
+  }
+  
+  span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #007bff;    
+    background-color: #007bff; 
+  }
+  
+  </style>
+  </head>
+  <body>
+    <a href="client.html">Home</a>
+    <a href="health.html">Health</a>
+    <a href="medicine.html">Medicine</a>
+    <a href="news.html">News</a>
+    <a href="client.html">Client</a>
+    <a href="contact.html">Contact Us</a>
+
+  
+  <h1> Find a Doctor on your language</h1><br>
+  
+  <h2>ETC ETC ETC etc etc etc etc </h2> <br>
+  <div><p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.</p></div><br>
+    
+  <h2> ETC ETC ETC etc etc etc etc etc etc </h2><br>
+  <div><p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.</p><br>
+  <span class="b"><h3>
+    Doctor 1 
+    <small class="text-muted"> etc etc</small>
+  </h3></span> 
+  <span class="b"><h3>
+    Doctor 2 
+   <small class="text-muted"> etc etc</small>
+   </h3></span> 
+   <span class="b"><h3>
+    Doctor 3 
+   <small class="text-muted"> etc etc</small>
+   </h3></span>
+   <span class="b"><h3>
+    Doctor 4
+   <small class="text-muted"> etc etc</small>
+   </h3></span>
+  </div> <br>
+
+      <div id="map">
+      </div>
+      <script>
+        function initMap () {
+          var location = {lat: 51.207930, lng: 6.782970};
+          var map = new google.maps.Map (document.getElementById("map"), {
+            zoom : 4,
+            center: location
+          });
+          var marker = new google.maps.Marker({
+            position: location,
+            map:map
+          });
+        }
+      </script>
+      <script async defer src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyAt1mYBdSWlW0tDJwE-UqPbq3gtVWkRG-4&callback=initMap">
+
+      </script>
+    </body>
+
+</html>

@@ -2,13 +2,26 @@
 <html>
 <head> 
 	<link rel="stylesheet" href="style.css">
+	  <head lang="en">
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="tell.js"></script>
+
 	<title> My symptoms</title>
 </head>
 <body>
-    <h2> TELL US HOW YOU FEEL</h2>
+	<a href="client.html">Home</a>
+    <a href="health.html">Health</a>
+    <a href="medicine.html">Medicine</a>
+    <a href="news.html">News</a>
+    <a href="client.html">Client</a>
+    <a href="contact.html">Contact Us</a><br>
+
+    <h1> TELL US HOW YOU FEEL</h1>
      <p> Here we offer you a help to track your symptoms in the respective days, so you can have a better way to visualize it and share with your doctor.<br>
      To start please give us some informations: </p> 
-     <form method="GET">
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <form method="get" id="Search">
          Date: <input type="date" name="date" ><br>
          Gender: <br>
 		<input type="radio" name="Gender" value="male"> Male 
@@ -16,7 +29,8 @@
 		<input type="radio" name="Gender" value="other"> Other <br>
 	 </form>
     <p> Please mark the symptoms you are feeling today or the symptoms you felt on the chosen date.</p>
-    <form method="POST">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <form method="get" id="Search">
         <input type="checkbox" name="Please mark the symptoms you are feeling today or the symptoms you felt on the chosen date." value="Headache"> Headache <br>
 		<input type="checkbox" name="Please mark the symptoms you are feeling today or the symptoms you felt on the chosen date." value="Fever"> Fever<br>
 		<input type="checkbox" name="Please mark the symptoms you are feeling today or the symptoms you felt on the chosen date." value="Muscle or body pain">Muscle or body pain <br>
@@ -78,9 +92,10 @@
 		    <input type="radio" name="Tell us if you did any kind of physical exercise today:" value="No"> No <br>
     <p>Personal notes:</p><br>
             <input type="text" name="Personal notes"><br>
-       <p> <input type="submit" value="Send">
+       <p>  <button type="submit">Send</button>
 		<input type="reset"> </p>
 	</form>
+	<pre class="output"></pre>
 
     </body>
 </html>
