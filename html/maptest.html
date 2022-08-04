@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link type="stylesheet" src="mapatest"></link>
+        <link type="stylesheet" src="mapatest"></link> 
+      <link rel="stylesheet" href="bootstrap.css">
       <title>Doctors in English</title>
       <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> 
       <script type="text/javascript" src="map.js"></script>
@@ -20,8 +21,8 @@
 
 <style>
  body {
-    background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(66, 175, 218) 94%);
+    background: rgb(246, 250, 250);
+background: linear-gradient(0deg, rgb(250, 255, 255) 0%, rgb(187, 230, 247) 94%);
 }
   span.a {
     display: inline; /* the default for span */
@@ -43,15 +44,42 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(66, 175, 218) 94%)
   
   </style>
   </head>
+
   <body>
 
-    <a href="client.html">Home</a>
-    <a href="health.html">Health</a>
-    <a href="medicine.html">Medicine</a>
-    <a href="news.html">News</a>
-    <a href="client.html">Client</a>
-    <a href="contact.html">Contact Us</a>
-
+    <div class="header_section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="logo"><a href="index.html"></div>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="health.html">Health</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="medicine.html">Medicine</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="news.html">News</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" href="client.html">Client</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </div>
   
   <h1> Find a Doctor on your language</h1><br>
   

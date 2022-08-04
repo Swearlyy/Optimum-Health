@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head> 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="tell.css">
+	<link rel="stylesheet" href="bootstrap.css">
 	  <head lang="en">
   <meta charset="UTF-8">
   <script type="text/javascript" src="tell.js"></script>
@@ -9,12 +10,39 @@
 	<title> My symptoms</title>
 </head>
 <body>
-	<a href="client.html">Home</a>
-    <a href="health.html">Health</a>
-    <a href="medicine.html">Medicine</a>
-    <a href="news.html">News</a>
-    <a href="client.html">Client</a>
-    <a href="contact.html">Contact Us</a><br>
+	  <div class="header_section">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logo"><a href="index.html"></a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="health.html">Health</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="medicine.html">Medicine</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="client.html">Client</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
 
     <h1> TELL US HOW YOU FEEL</h1>
      <p> Here we offer you a help to track your symptoms in the respective days, so you can have a better way to visualize it and share with your doctor.<br>
@@ -66,7 +94,7 @@
 
     <p>Please give us some more information:</p><br>
 	<p>Tell us the intensity of your pain related symptoms:<br>
-	(to understand how to define it better <a href="index1.html">click here</a>)</p><br>
+	(to understand how to define it better <a href="scale.html">click here</a>)</p><br>
 		    <input type="radio" name="Tell us the intensity of your pain related symptoms:" value="Slightly Felt"> Slightly Felt 
 		    <input type="radio" name="Tell us the intensity of your pain related symptoms:" value="Weak"> Weak 
 		    <input type="radio" name="Tell us the intensity of your pain related symptoms:" value="Moderately Strong"> Moderately Strong
