@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link type="stylesheet" src="mapatest"></link>
+      <title>Doctors in English</title>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> 
+      <script type="text/javascript" src="map.js"></script>
+      <style>
+          * {
+            margin: 0;
+            padding:  0;
+          }
+          #map{
+             height: 500px;
+             width: 100%;
+             position: relative;
+             
+          }
+        </style>
+
+<style>
+ body {
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(66, 175, 218) 94%);
+}
+  span.a {
+    display: inline; /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;  
+    background-color: yellow; 
+  }
+  
+  span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #007bff;    
+    background-color: #007bff; 
+  }
+  
+  </style>
+  </head>
+  <body>
+
+    <a href="client.html">Home</a>
+    <a href="health.html">Health</a>
+    <a href="medicine.html">Medicine</a>
+    <a href="news.html">News</a>
+    <a href="client.html">Client</a>
+    <a href="contact.html">Contact Us</a>
+
+  
+  <h1> Find a Doctor on your language</h1><br>
+  
+  <h2>ETC ETC ETC etc etc etc etc </h2> <br>
+  <div><p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.</p>
+  </div><br>
+    
+  <h2> ETC ETC ETC etc etc etc etc etc etc </h2><br>
+  <div><p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.</p>
+  </div><br>
+
+      <div id="map">
+      
+      </div>
+      <script>
+        function initMap () {
+          var location = {lat: 51.207930, lng: 6.782970};
+          var map = new google.maps.Map (document.getElementById("map"), {
+            zoom : 4,
+            center: location
+          }
+          );
+      const contentString =
+      '<div id="content">' +
+      '<div id="siteNotice">' +
+      "</div>" +
+      '<h1 id="firstHeading" class="firstHeading">Doctor 1</h1>' +
+      '<div id="bodyContent">' +
+      "<p><b>DOCTOR 1</b>, also referred to as <b>all the info of his office</b>, etc etc etc " +
+      "etc etc etc info info info info info info " +
+      "Maybe a brief introduction to the doctor etc etc etc " +
+      "Info for contact can start over here " +
+      "Adresse:  Erasmusstr. 14 40223 Düsseldorf" +
+      "E-Mail: info@praxis-bilk.de" +
+      "Tel: 0211/160 110 20 Fax: 0211/160 110 21"  +
+      "And some more basic info.</p>" +
+      '<p>Check the doctor page <a href="https://praxis-bilk.de/impressum/">' +
+      "https://praxis-bilk.de/impressum/</a> " +
+      "(last visited Aug 04, 2022).</p>" +
+      "</div>" +
+      "</div>";
+
+      const infowindow = new google.maps.InfoWindow({
+      content: contentString,
+    });
+    const marker = new google.maps.Marker({
+      position: location,
+      map,
+      title: "DOCTOR INFO",
+    });
+    marker.addListener("click", () => {
+      infowindow.open({
+        anchor: marker,
+        map,
+        shouldFocus: false,
+      });
+    });
+    }
+      </script>
+      
+      
+      <script async defer src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyAt1mYBdSWlW0tDJwE-UqPbq3gtVWkRG-4&callback=initMap">
+     defer
+     </script>
+    </body>
+
+</html>
