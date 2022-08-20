@@ -96,12 +96,17 @@ background: linear-gradient(0deg, rgb(127, 212, 212) 0%, rgb(241, 250, 255) 94%)
       </div>
       <script>
         function initMap () {
-          var location = {lat: 51.207930, lng: 6.782970};
+          var location = {
+            lat: 51.207930, lng: 6.782970 
+         };
+         
+
           var map = new google.maps.Map (document.getElementById("map"), {
-            zoom : 4,
+            zoom : 14,
             center: location
           }
           );
+
       const contentString =
       '<div id="content">' +
       '<div id="siteNotice">' +
