@@ -1,11 +1,39 @@
-body {
-
-    background: rgb(34,193,195);
-background: linear-gradient(0deg, rgb(31, 185, 212) 0%, rgb(245, 248, 250) 94%);;
-    color: #666666;
-    font-size: 14px;
-    font-family: Poppins;
-    line-height: 1.80857;
-    font-weight: normal;
-    overflow-x: hidden;
+form  {
+   font-family: "Karla";
+   font-size: 25px;
+   color: #A2A7A5;
+  
 }
+button {
+  background-color: #018E89;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {opacity: 1}
+
+#submit {
+  background-color: #018E89;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#submit:hover {opacity: 1}

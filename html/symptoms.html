@@ -46,12 +46,16 @@
      To start please give us some informations: </p> 
     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <form method="get" id="Search">
+     <form method="POST" id="Search">
          Date: <input type="date" name="date" ><br>
          Gender: <br>
 		<input type="radio" name="Gender" value="male"> Male 
 		<input type="radio" name="Gender" value="female"> Female 
 		<input type="radio" name="Gender" value="other"> Other <br>
+		<p>Email:</p>
+            <input class="email" type="Email_text" name="Email_text" value="Email">
+       <p>  <input id="submit" type="submit" value="Submit">
+		</p>
 	 </form>
     <p> Please mark the symptoms you are feeling today or the symptoms you felt on the chosen date.</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -118,7 +122,7 @@
     <p>Personal notes:</p><br>
             <input type="text" name="Personal notes"><br>
        <p>  <button type="submit">Send</button>
-		<input type="reset"> </p>
+		 </p>
 	</form>
 	<pre class="output"></pre>
 
@@ -144,7 +148,7 @@
                <h1 class="adderss_text">Newsletter (do we need that?)</h1>
                <input type="text" class="Enter_text" placeholder="Enter your Emil" name="Enter your Email">
                <div class="subscribe_bt"><a href="#">Subscribe</a></div>
-               <div class="social_icon">
+               <div class="social_icon"></div>
 
     </body>
 </html>
