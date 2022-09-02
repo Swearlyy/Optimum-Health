@@ -902,7 +902,13 @@ button {
     font-size: 16px;
     margin-left: 0px;
 }
+.Useful_link {
+   width: 50%;
+    color: #d6d6d6;
+    font-size: 14px;
+    margin-left: 0px;
 
+}
 .Enter_text {
     width: 100%;
     float: left;
