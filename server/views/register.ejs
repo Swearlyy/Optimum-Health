@@ -1,0 +1,63 @@
+<h1>Register</h1>
+
+<form action="/register", method="POST">
+    <div>
+        <br>
+        <label>Name</label>  
+        <br>
+          <input type="text" placeholder="firstName" id="firstName" name="firstName" required>
+          <input type="text" placeholder="lastName" id="lastName" name="lastName" required>
+          
+          <br><br>
+          <label>Email</label>  
+          <br>
+          <input type="email" id="email"name="email" required>
+         
+          <br><br>
+          <label>Enter a password</label>
+          <input type="password" id="password" name="password" required >
+  
+      
+      <br><br>
+          <label>Date of birth</label>
+          <br>
+          <input type="date" id="dateofBirth" name="dateofBirth" required>
+         
+     <br><br>
+      <label>Mobile Number</label>
+      <br>
+      <input type="tel" placeholder="+4900000000000" id="phoneNo" name="phoneNo" maxlength="12" required>
+      
+     <br><br>
+      <label>Address</label>
+      <br>
+      <input type="text" placeholder="streetName" id="streetName" name="streetName" required>
+      <input type="text" placeholder="houseNumber" id="houseNumber" name="houseNumber" maxlength="7" required>
+      
+      <br><br>
+      <input type="text" id="postalCode" name="postalCode" required>
+      <input type="text" id="city" name="city" required>
+     
+      <br><br>
+      <label for="gender">Gender</label>
+      <br>
+      <select id="gender" name="gender">
+          <option value="">---please select an option---</option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="other">other</option>
+      </select>
+          
+      <br><br>
+      <input type="checkbox" id="agree" name="agree" required >
+      <label for="agree">I accept the terms of service</label>
+      
+    </div>
+      <br><br>
+      <button>SUBMIT</button>
+
+    </form>
+    
+      <a href="/login">Login</a>
+   
+
