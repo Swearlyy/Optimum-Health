@@ -1,5 +1,8 @@
-
-tell.js
-map.js
-index.ts
-maptest.html
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
