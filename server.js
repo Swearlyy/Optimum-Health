@@ -23,7 +23,7 @@ initializePassport (
 const users = []
 
 app.set('view-engine', 'ejs')
-app.set('views','./server/views');
+app.set('views','./views');
 
 app.use(express.urlencoded({extended: false}))
 
@@ -39,9 +39,18 @@ app.use(passport.initialize())
 app.use(passport.session())
 app.use(methodOverride('_method'))
 
+app.use(express.static(__dirname + '/public'));
 
-app.get( '/', checkAuthenticated, (req, res) => {
-    res.render('index.ejs', {firstName:req.user.firstName})
+app.get( '/', (req, res) => {
+    res.render('index.ejs')
+} )
+
+app.get( '/profile', checkAuthenticated, (req, res) => {
+    res.render('profile.ejs', {firstName:req.user.firstName})
+} )
+
+app.get( '/map', (req, res) => {
+    res.render('maptest.ejs')
 } )
 
 app.get( '/login', checkNotAuthenticated, (req, res) => {
@@ -49,7 +58,7 @@ app.get( '/login', checkNotAuthenticated, (req, res) => {
 } )
 
 app.post( '/login', checkNotAuthenticated, passport.authenticate ('local', {
-    successRedirect: '/',
+    successRedirect: '/profile',
     failureRedirect: '/login',
     failureFlash: true
 
@@ -108,7 +117,7 @@ function checkAuthenticated(req, res, next) {
 function checkNotAuthenticated(req, res, next) {
     if (req.isAuthenticated()) 
     {
-       return res.redirect('/')
+       return res.redirect('/profile')
       
     }
     next ()
