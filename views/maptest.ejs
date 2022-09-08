@@ -14,25 +14,7 @@
     background: rgb(246, 250, 250);
 background: linear-gradient(0deg, rgb(127, 212, 212) 0%, rgb(241, 250, 255) 94%);
 }
-  span.a {
-    display: inline; /* the default for span */
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-    border: 1px solid blue;  
-    background-color: yellow; 
-  }
-  
-  span.b {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-    border: 1px solid #007bff;    
-    background-color: #007bff; 
-  }
-  
-  </style>
+</style>
   </head>
 
   <body>
@@ -73,7 +55,7 @@ background: linear-gradient(0deg, rgb(127, 212, 212) 0%, rgb(241, 250, 255) 94%)
       <div><p class="lead">We understand how hard it can be to handle the changes of living in a new country with a different culture, and especially  different language. Thinking about the situations where we must see a doctor, is understandable that talking to a doctor in another language is considered a stressful event. We are here to help you optmize your time and take care of your health without stress of both parts. Comunication can be hard, but it doesn't need to be a barrier.  </p>
       </div><br>
         
-      <h1> How can we help? </h1>
+      <h1 class="health_taital">  How can we help? </h1><br>
       <div><p class="lead">We are offering for you the location and contact of the Doctor's Offices who can communicate with you and provide the whole process of your visit in English. We are taking care of the details of it, which means that not only the Doctor speak English but all the staff as well.</p>
       </div><br></div>
 
@@ -81,11 +63,11 @@ background: linear-gradient(0deg, rgb(127, 212, 212) 0%, rgb(241, 250, 255) 94%)
 
   <script type="text/javascript">
     var locations = [
-      ['<p><b>DOCTOR VIOLA LENZ</b>, also referred to as <b>Praxis Bilk</b>, is a general practitioner, in Germany normally called Hausarzt. Is possible to get attendance for phone calls or in person in both English and German.<br> <b>Contact and Adress:<b><br> Erasmusstr. 14 40223 Düsseldorf <br> E-Mail: info@praxis-bilk.de <br> Tel: 0211/160 110 20 Fax: 0211/160 110 21 <br><b>Check the doctor page </b> <a href="https://praxis-bilk.de/impressum/"> here </a>', 51.207932, 6.782970, 5],
-      ['<p><b>DOCTOR ANITA ANGELA POSA </b>Fachärztin, also referred to as <b>Praxis Posa</b>, is a general practitioner(<i>Hausarzt</i>). Is possible to get attendance in both English or German, the office has also offers attendance in Hungarian and Romanian .<br> <b>Contact and Adress:<b> <br> Berliner Allee 56, 40212 Düsseldorf <br> E-Mail: info@praxisposa.de<br> Tel: 0211-15866231 Fax: 0 211-15866232 </b><br><b>Check the doctor page </b> <a href="https://praxisposa.de/"> here </a>', 51.218260, 6.782280, 4],
-      ['<p><b>DOCTOR DARIUS SEPEHRMANESH</b> is a general practitioner(<i>Hausarzt</i>) with Focus on respiratory diseases and diagnostics. The praxis has now more than 40 years of experience and it offers a very modern exam service. Is possible to get attendance in both English or German.<br> Contact and Adress:<br> <b> Friedrichstrasse 51, 40217 Düsseldorf <br>  Telefon: 0211 / 38 16 30 Telefax: 0211 / 994 51 46 </b><br><b>Check the doctor page </b> <a href="http://praxis-fuer-innere.de/"> here </a>', 51.216300, 6.776680, 3],
-      ['<p> <b>DOCTOR DIRK SCHMITTER Dirk Schmitter </b> is a general practitioner(<i>Hausarzt</i>), his office is referred as Flin Docs, the office focuses on care in the areas of sports medicine, hypertensiology, lymphology and anti-aging.<br> Contact and Adress:<br> <b> Birkenstraße 38, 40233 Düsseldorf <br> E-mail: mitte@flindocs.de <br> Telefone: 0211-686707 Fax 0211-686716 </b><br><b>Check the doctor page </b> <a href="https://flindocs.de/"> here </a>', 51.227440, 6.802080, 2],
-      ['<p> <b> DOCTOR GILBERT BOCH</b> is a general practitioner(<i>Hausarzt</i>). He is part of the Haifa Med Praxis and has additional qualification in sports medicine.<br> Contact and Adress:<br> <b> Werdener Straße 8, 40227 Düsseldorf <br> E-mail: praxis@haifa-med.de <br> Telefone:(0211) 2 00 70 50 Fax(0211) 720 66 42</b><br><b>Check the doctor page </b> <a href="https://www.haifamed.de/content/"> here </a>', 51.217730, 6.804920, 1]
+      ['<p><b>DOCTOR VIOLA LENZ</b>, also referred to as <b>Praxis Bilk</b>, is a general practitioner, in Germany normally called Hausarzt. Is possible to get attendance for phone calls or in person in both English and German.<br> <b>Contact and Adress:<br> Erasmusstr. 14 40223 Düsseldorf <br> E-Mail: info@praxis-bilk.de <br> Tel: 0211/160 110 20 Fax: 0211/160 110 21 <br>Check the doctor page </b> <a href="https://praxis-bilk.de/impressum/"> <b>here</b> </a>', 51.207932, 6.782970, 5],
+      ['<p><b>DOCTOR ANITA ANGELA POSA </b>Fachärztin, also referred to as <b>Praxis Posa</b>, is a general practitioner(<i>Hausarzt</i>). Is possible to get attendance in both English or German, the office has also offers attendance in Hungarian and Romanian .<br> <b>Contact and Adress:<br> Berliner Allee 56, 40212 Düsseldorf <br> E-Mail: info@praxisposa.de<br> Tel: 0211-15866231 Fax: 0 211-15866232<br>Check the doctor page </b> <a href="https://praxisposa.de/"> <b> here</b> </a>', 51.218260, 6.782280, 4],
+      ['<p><b>DOCTOR DARIUS SEPEHRMANESH</b> is a general practitioner(<i>Hausarzt</i>) with Focus on respiratory diseases and diagnostics. The praxis has now more than 40 years of experience and it offers a very modern exam service. Is possible to get attendance in both English or German.<br> Contact and Adress:<br> <b> Friedrichstrasse 51, 40217 Düsseldorf <br>  Telefon: 0211 / 38 16 30 Telefax: 0211 / 994 51 46 <br>Check the doctor page </b> <a href="http://praxis-fuer-innere.de/"><b> here </b> </a>', 51.216300, 6.776680, 3],
+      ['<p> <b>DOCTOR DIRK SCHMITTER Dirk Schmitter </b> is a general practitioner(<i>Hausarzt</i>), his office is referred as <b> Flin Docs</b>, the office focuses on care in the areas of sports medicine, hypertensiology, lymphology and anti-aging.<br> Contact and Adress:<br> <b> Birkenstraße 38, 40233 Düsseldorf <br> E-mail: mitte@flindocs.de <br> Telefone: 0211-686707 Fax 0211-686716<br>Check the doctor page </b> <a href="https://flindocs.de/"> <b>here</b> </a>', 51.227440, 6.802080, 2],
+      ['<p> <b> DOCTOR GILBERT BOCH</b> is a general practitioner(<i>Hausarzt</i>). He is part of the <b>Haifa Med Praxis</b> and has additional qualification in sports medicine.<br> Contact and Adress:<br> <b> Werdener Straße 8, 40227 Düsseldorf <br> E-mail: praxis@haifa-med.de <br> Telefone:(0211) 2 00 70 50 Fax(0211) 720 66 42<br>Check the doctor page </b> <a href="https://www.haifamed.de/content/"> <b> here</b> </a>', 51.217730, 6.804920, 1]
 
     ];
     
