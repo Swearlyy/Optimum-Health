@@ -749,6 +749,28 @@ button {
     background-color: #252525;
 }
 
+button{
+    width: 140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1becde;
+    padding: 7px 0px;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+button a:hover {
+    background-color: #252525;
+}
+
 .client_section {
     width: 100%;
     float: left;
