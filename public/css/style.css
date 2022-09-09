@@ -46,7 +46,7 @@ body {
 }
 
 a {
-    color: #1f1f1f;
+    color: #ffffff ;
     text-decoration: none !important;
     outline: none !important;
     -webkit-transition: all .3s ease-in-out;
@@ -110,7 +110,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    color: #212121;
+    color: #ffffff ;
     text-decoration: none!important;
     opacity: 1
 }
@@ -135,7 +135,7 @@ p {
 }
 
 a {
-    color: #222222;
+    color: 087DC3;
     text-decoration: none;
     outline: none !important;
 }
@@ -447,54 +447,13 @@ button {
     text-align: center;
 }
 
-.image_main:hover .image {
-    background-color: rgba(27, 236, 222, 0.5);
-}
 
-.image_main:hover .middle {
-    opacity: 1;
-}
-
-.text {
-    background-color: #252525;
-    color: white;
-    font-size: 16px;
-    padding: 32px 32px;
-    border-radius: 100px;
-}
 
 .image_main_1 {
     width: 100%;
     position: relative;
 }
 
-.image_main_1:hover .image {
-    background-color: rgba(27, 236, 222, 0.5);
-}
-
-.image_main_1:hover .middle {
-    opacity: 1;
-}
-
-.getquote_bt_1 {
-    width: 180px;
-    float: left;
-    margin-top: 100px;
-}
-
-.getquote_bt_1 a {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #1becde;
-    padding: 7px 0px;
-    text-align: center;
-}
-
-.getquote_bt_1 a:hover {
-    background-color: #252525;
-}
 
 .knowledge_section {
     width: 100%;
