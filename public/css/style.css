@@ -734,6 +734,53 @@ button a {
 button a:hover {
     background-color: #252525;
 }
+.client_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 90px;
+}
+
+.client_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    text-align: center;
+    color: #111010;
+    font-weight: bold;
+}
+
+.client_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #444443;
+    text-align: center;
+    margin: 0px;
+}
+
+.client_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 60px;
+}
+
+.client_left {
+    width: 40%;
+    float: left;
+}
+
+.client_right {
+    width: 60%;
+    float: left;
+    padding-top: 100px;
+}
+
+.client_img {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
 
 .distracted_text {
     width: 100%;
