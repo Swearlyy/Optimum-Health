@@ -697,7 +697,7 @@ button {
     text-align: center;
 }
 
-.send_bt button {
+.send_bt a {
     width: 100%;
     float: left;
     font-size: 18px;
@@ -709,10 +709,60 @@ button {
     text-transform: uppercase;
 }
 
-.send_bt button:hover {
+.send_bt a:hover {
     background-color: #252525;
 }
 
+.client_section {
+    width: 100%;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.client_taital {
+    width: 50%;
+    height: 300px;
+    font-size: 40px;
+    text-align: center;
+    color: #111010;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.client_left {
+    width: 40%;
+    float: left;
+}
+
+.client_right {
+    width: 60%;
+    float: left;
+    padding-top: 100px;
+}
+.client_img {
+    width: 40%;
+    margin: 0 auto;
+    position: right;
+    display: block;
+  }
+
+.client_img {
+   padding-right: 20%;
+}
+
+.client_img {
+    width: 100%;
+    position: relative;
+}
+
+
+.client_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 60px;
+}
+  
 button{
     width: 140px;
     margin: 0 auto;
@@ -1009,22 +1059,6 @@ input.Enter_text::placeholder {
 }
 
 
-.client_section {
-    width: 30%;
-    padding-bottom: 90px;
-    text-align: center;
-}
-
-.client_taital {
-    width: 50%;
-    height: 300px;
-    font-size: 40px;
-    text-align: center;
-    color: #111010;
-    font-weight: bold;
-    margin: 0 auto;
-    margin-top: 80px;
-}
 
 .logout_btn{
     width: 20%;
