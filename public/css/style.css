@@ -46,7 +46,7 @@ body {
 }
 
 a {
-    color: #ffffff ;
+    color: 244BC1;
     text-decoration: none !important;
     outline: none !important;
     -webkit-transition: all .3s ease-in-out;
@@ -110,6 +110,11 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
+    color: #ffffff ;
+    text-decoration: none!important;
+    opacity: 1
+}
+.footer_section a {
     color: #ffffff ;
     text-decoration: none!important;
     opacity: 1
@@ -691,7 +696,7 @@ button {
     text-align: center;
 }
 
-.send_bt a {
+.send_bt button{
     width: 100%;
     float: left;
     font-size: 18px;
@@ -703,7 +708,7 @@ button {
     text-transform: uppercase;
 }
 
-.send_bt a:hover {
+.send_bt button:hover {
     background-color: #252525;
 }
 
@@ -835,7 +840,10 @@ button a:hover {
     margin-left: 0px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c9f38d92f1018d35be43456b0f17facd84394c47
 .Enter_text {
     width: 100%;
     float: left;
