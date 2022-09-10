@@ -1,63 +1,76 @@
-<h1>Register</h1>
+<div class="register">
+  <div class="register_box">
+    <h1 class="register_text">Register</h1>
 
-<form action="/register", method="POST">
-    <div>
+    <form action="/register", method="POST" >
+      <div>
+        <label>First Name</label>  
+        <input type="text" placeholder="firstName" id="firstName" name="firstName" required>
+        <br><br>
+        <label>Last Name</label>  
+        <input type="text" placeholder="lastName" id="lastName" name="lastName" required>  
+      </div>
+
         <br>
-        <label>Name</label>  
-        <br>
-          <input type="text" placeholder="firstName" id="firstName" name="firstName" required>
-          <input type="text" placeholder="lastName" id="lastName" name="lastName" required>
-          
-          <br><br>
-          <label>Email</label>  
-          <br>
-          <input type="email" id="email"name="email" required>
-         
-          <br><br>
-          <label>Enter a password</label>
-          <input type="password" id="password" name="password" required >
+      <div>
+        <label>Email</label>
+        <input type="email" id="email"name="email" required>
+        <br> <br>
+        <label>Password</label>
+        <input type="password" id="password" name="password" required >
+      </div>
   
-      
-      <br><br>
-          <label>Date of birth</label>
-          <br>
-          <input type="date" id="dateofBirth" name="dateofBirth" required>
-         
-     <br><br>
-      <label>Mobile Number</label>
+        <br>
+
+      <div>
+        <label>Date of birth</label>
+        <input type="date" id="dateofBirth" name="dateofBirth" required>
+        <br><br>
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="+4900000000000" id="phoneNo" name="phoneNo" maxlength="12" required>
+      </div>
       <br>
-      <input type="tel" placeholder="+4900000000000" id="phoneNo" name="phoneNo" maxlength="12" required>
-      
-     <br><br>
-      <label>Address</label>
+      <div>
+        <label>street Name</label>
+        <input type="text" placeholder="streetName" id="streetName" name="streetName" required>
+        <br><br>
+        <label>House Number</label>
+        <input type="text" placeholder="houseNumber" id="houseNumber" name="houseNumber" maxlength="7" required>
+        </div>
+        <br>
+      <div>
+        <label>Postal Code</label>
+        <input type="text" id="postalCode" name="postalCode" required>
+        <br><br>
+        <label>City</label>
+        <input type="text" id="city" name="city" required>
+      </div>
+
       <br>
-      <input type="text" placeholder="streetName" id="streetName" name="streetName" required>
-      <input type="text" placeholder="houseNumber" id="houseNumber" name="houseNumber" maxlength="7" required>
-      
-      <br><br>
-      <input type="text" id="postalCode" name="postalCode" required>
-      <input type="text" id="city" name="city" required>
-     
-      <br><br>
-      <label for="gender">Gender</label>
-      <br>
-      <select id="gender" name="gender">
+    
+      <div>
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
           <option value="">---please select an option---</option>
           <option value="male">male</option>
           <option value="female">female</option>
           <option value="other">other</option>
-      </select>
-          
-      <br><br>
-      <input type="checkbox" id="agree" name="agree" required >
-      <label for="agree">I accept the terms of service</label>
+        </select>
+      </div>
+        
+      <div>
+        <input type="checkbox" id="agree" name="agree" required >
+        <label for="agree">I accept the terms of service</label>
+      </div>
+      <br>
+      <button class="submit_btn" >SUBMIT</button>
       
-    </div>
-      <br><br>
-      <button>SUBMIT</button>
-
     </form>
-    
+    <br><br>
       <a href="/login">Login</a>
+    
+  </div>
+
+</div>
    
 

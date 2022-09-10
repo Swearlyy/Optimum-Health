@@ -11,8 +11,9 @@ const passport = require('passport')
 const flash = require('express-flash')
 const session = require('express-session')
 const methodOverride = require('method-override')
-
 const initializePassport = require ('./passport-config')
+const expressEjsLayouts = require('express-ejs-layouts')
+
 initializePassport (
     passport, 
     email => users.find(user => user.email == email),
@@ -22,7 +23,9 @@ initializePassport (
 
 const users = []
 
-app.set('view-engine', 'ejs')
+app.use(expressEjsLayouts)
+app.set('layout', './layouts/base')
+app.set('view engine', 'ejs')
 app.set('views','./views');
 
 app.use(express.urlencoded({extended: false}))

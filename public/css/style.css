@@ -217,7 +217,6 @@ button {
 
 .header_section {
     width: 100%;
-    float: left;
     background-image: url(../images/banner-bg.png);
     height: auto;
     background-size: 100%;
@@ -730,54 +729,6 @@ button a:hover {
     background-color: #252525;
 }
 
-.client_section {
-    width: 100%;
-    float: left;
-    padding-bottom: 90px;
-}
-
-.client_taital {
-    width: 100%;
-    float: left;
-    font-size: 40px;
-    text-align: center;
-    color: #111010;
-    font-weight: bold;
-}
-
-.client_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #444443;
-    text-align: center;
-    margin: 0px;
-}
-
-.client_section_2 {
-    width: 100%;
-    float: left;
-    padding-top: 60px;
-}
-
-.client_left {
-    width: 40%;
-    float: left;
-}
-
-.client_right {
-    width: 60%;
-    float: left;
-    padding-top: 100px;
-}
-
-.client_img {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-}
-
 .distracted_text {
     width: 100%;
     float: left;
@@ -884,7 +835,7 @@ button a:hover {
     margin-left: 0px;
 }
 
-}
+
 .Enter_text {
     width: 100%;
     float: left;
@@ -959,4 +910,128 @@ input.Enter_text::placeholder {
 
 .margin_90 {
     margin: 90px 0px;
+}
+
+
+.login {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.login a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1becde;
+    padding: 7px 0px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.login a:hover {
+    background-color: #252525;
+}
+
+.login_btn{
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #252525;
+    padding: 7px 0px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.register {
+    background-color: #5d918d;
+    
+}
+
+.register_box {
+    width: 50%;
+    background-color: #f1fafb;
+    height: auto;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 0 auto;
+    
+}
+
+.register_text {
+    width: 20%;
+    font-size: 30px;
+    color: #252525;
+    text-align: center;
+    font-weight: 500;
+}
+
+.submit_btn{
+    width: 40%;
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #252525;
+    padding: 7px 0px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.register a {
+    width: 200pt;
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1becde;
+    padding: 7px 0px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: -250px;
+ 
+}
+
+.register a:hover {
+    background-color: #252525;
+}
+
+
+.client_section {
+    width: 30%;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.client_taital {
+    width: 50%;
+    height: 300px;
+    font-size: 40px;
+    text-align: center;
+    color: #111010;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.logout_btn{
+    width: 20%;
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1becde;
+    padding: 7px 0px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.logout_btn:hover {
+    background-color: #252525;
 }
