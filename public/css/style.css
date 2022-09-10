@@ -697,7 +697,7 @@ button {
     text-align: center;
 }
 
-.send_bt a {
+.send_bt button {
     width: 100%;
     float: left;
     font-size: 18px;
@@ -709,7 +709,7 @@ button {
     text-transform: uppercase;
 }
 
-.send_bt a:hover {
+.send_bt button:hover {
     background-color: #252525;
 }
 
